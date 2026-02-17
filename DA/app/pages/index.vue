@@ -2,20 +2,21 @@
 import { ref } from 'vue'
 
 const categories = [
-    "Kadhannaa",
-    "Jaalala",
-  "Amantaa",
-  "Of Bituu",
-  "Sooma",
-  "Hiriyyaa Gaarii",
-  "Qulqullummaa",
-  "Abdii",
-  "Of Eeggannaa",
-  "Waa'ee Dubroo Maariyaam",
-  "Gorsa",
-  "Obsa",
-  "Gaabbii"
+  { name: "Kadhannaa", slug: "kadhannaa" },
+  { name: "Jaalala", slug: "jaalala" },
+  { name: "Amantaa", slug: "amantaa" },
+  { name: "Of Bituu", slug: "of-bituu" },
+  { name: "Sooma", slug: "sooma" },
+  { name: "Hiriyyaa Gaarii", slug: "hiriyyaa-gaarii" },
+  { name: "Qulqullummaa", slug: "qulqullummaa" },
+  { name: "Abdii", slug: "abdii" },
+  { name: "Of Eeggannaa", slug: "of-eeggannaa" },
+  { name: "Waa'ee Dubroo Maariyaam", slug: "waaee-dubroo-maariyaam" },
+  { name: "Gorsa", slug: "gorsa" },
+  { name: "Obsa", slug: "obsa" },
+  { name: "Gaabbii", slug: "gaabbii" }
 ]
+
 
 const selectedCategory = ref(null)
 
@@ -45,17 +46,20 @@ const selectCategory = (cat) => {
         Strengthen Your Spirit. Guide Your Life.
       </p>
 
-      <!-- Categories Grid -->
+      <!-- Categories Grid how to remove space from route ? -->
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        <NuxtLink
-          v-for="cat in categories"
-          :key="cat"
-          @click="selectCategory(cat)"
-          :to="`/${cat.toLowerCase()}`"
-          class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 rounded-xl py-3 px-4 text-sm md:text-base transition-all duration-300 hover:scale-105"
-        >
-          {{ cat }}
-        </NuxtLink>
+       <div
+         v-for="cat in categories"
+         :key="cat.slug"
+         @click="selectCategory(cat)"
+         class="cursor-pointer bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 rounded-xl py-3 px-4 text-sm md:text-base transition-all duration-300 hover:scale-105"
+  
+>
+<NuxtLink to="/kadhannaa" class="block w-full h-full">
+  {{ cat.name }}
+</NuxtLink>
+</div>
+
       </div>
 
     </div>

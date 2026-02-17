@@ -79,4 +79,5 @@ const contacts = [
 
     </div>
   </div>
+  
 </template>
