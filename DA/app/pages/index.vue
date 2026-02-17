@@ -2,6 +2,8 @@
 import { ref } from 'vue'
 
 const categories = [
+    "Kadhannaa",
+    "Jaalala",
   "Amantaa",
   "Of Bituu",
   "Sooma",
@@ -45,14 +47,15 @@ const selectCategory = (cat) => {
 
       <!-- Categories Grid -->
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        <button
+        <NuxtLink
           v-for="cat in categories"
           :key="cat"
           @click="selectCategory(cat)"
+          :to="`/${cat.toLowerCase()}`"
           class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 rounded-xl py-3 px-4 text-sm md:text-base transition-all duration-300 hover:scale-105"
         >
           {{ cat }}
-        </button>
+        </NuxtLink>
       </div>
 
     </div>
