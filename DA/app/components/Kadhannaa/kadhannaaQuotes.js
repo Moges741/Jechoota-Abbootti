@@ -1,5 +1,3 @@
-// composables/kadhannaaQuotes.js
-
 export const kadhannaaQuotes = [
   {
     id: 1,
