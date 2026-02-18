@@ -1,18 +1,20 @@
 <script setup>
+import { EnvelopeIcon, PhoneIcon, UserIcon } from '@heroicons/vue/24/outline'
+
 const contacts = [
   {
     role: "Developer",
-    name: "Your Name Here",
-    email: "developer@email.com",
-    phone: "+251 9XXXXXXXX",
-    description: "Frontend & Backend Developer of Spiritual Quotes Platform"
+    name: "Moges Sisay",
+    email: "mogesse741@gmail.com",
+    phone: "+251924433166",
+    description: "Software Engineering Student (MERN Stack Developer) and Creator of Jechoota Abbootti"
   },
   {
     role: "Quotes Provider",
-    name: "Quotes Giver Name",
+    name: "Ayantu",
     email: "quotes@email.com",
-    phone: "+251 9XXXXXXXX",
-    description: "Spiritual Father & Source of the Inspirational Quotes"
+    phone: "+251966500071",
+    description: "Biomedical Engineering Student and Spiritual Quotes Contributor"
   }
 ]
 </script>
@@ -25,53 +27,71 @@ const contacts = [
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
 
-    <!-- Content -->
     <div class="relative z-10 w-full max-w-6xl px-6 py-20">
-      
+
       <!-- Title -->
-      <div class="text-center mb-16">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">
-          Contact Us
+      <div class="text-center mb-20">
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
+          Contact
         </h1>
-        <p class="text-gray-300 text-lg">
-          Get in touch with the Developer and the Spiritual Quotes Provider
+        <p class="text-gray-300 mt-4 text-lg">
+          Connect with the minds behind Jechoota Abbootti
         </p>
       </div>
 
-      <!-- Contact Cards -->
-      <div class="grid md:grid-cols-2 gap-10">
-        
+      <!-- Cards -->
+      <div class="grid md:grid-cols-2 gap-12">
+
         <div
           v-for="person in contacts"
           :key="person.role"
-          class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 shadow-xl hover:scale-105 transition duration-300"
+          class="group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-10 shadow-2xl transition-all duration-500 hover:bg-white/10 hover:scale-[1.03]"
         >
-          <h2 class="text-2xl font-semibold mb-2 text-yellow-400">
-            {{ person.role }}
-          </h2>
 
-          <h3 class="text-xl font-bold mb-4">
-            {{ person.name }}
-          </h3>
+          <!-- Glow effect -->
+          <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/5 to-white/0 opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
-          <p class="text-gray-300 mb-6">
-            {{ person.description }}
-          </p>
+          <div class="relative z-10">
 
-          <div class="space-y-2 text-sm md:text-base">
-            <p>
-              📧 Email: 
-              <a :href="`mailto:${person.email}`" class="underline hover:text-yellow-300">
-                {{ person.email }}
-              </a>
+            <!-- Role -->
+            <p class="text-sm uppercase tracking-widest text-yellow-400 mb-3">
+              {{ person.role }}
             </p>
 
-            <p>
-              📞 Phone:
-              <a :href="`tel:${person.phone}`" class="underline hover:text-yellow-300">
-                {{ person.phone }}
-              </a>
+            <!-- Name -->
+            <div class="flex items-center gap-3 mb-6">
+              <UserIcon class="w-6 h-6 text-gray-300" />
+              <h2 class="text-2xl font-semibold">
+                {{ person.name }}
+              </h2>
+            </div>
+
+            <!-- Description -->
+            <p class="text-gray-300 leading-relaxed mb-8">
+              {{ person.description }}
             </p>
+
+            <!-- Contact Info -->
+            <div class="space-y-4">
+
+              <a
+                :href="`mailto:${person.email}`"
+                class="flex items-center gap-3 text-gray-200 hover:text-yellow-400 transition duration-300"
+              >
+                <EnvelopeIcon class="w-5 h-5" />
+                <span>{{ person.email }}</span>
+              </a>
+
+              <a
+                :href="`tel:${person.phone}`"
+                class="flex items-center gap-3 text-gray-200 hover:text-yellow-400 transition duration-300"
+              >
+                <PhoneIcon class="w-5 h-5" />
+                <span>{{ person.phone }}</span>
+              </a>
+
+            </div>
+
           </div>
         </div>
 
@@ -79,5 +99,4 @@ const contacts = [
 
     </div>
   </div>
-  
 </template>
