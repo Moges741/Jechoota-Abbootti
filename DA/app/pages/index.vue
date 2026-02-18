@@ -27,7 +27,8 @@ const selectCategory = (cat) => {
 
 <template>
   <div
-    class="relative min-h-screen bg-cover bg-center flex flex-col justify-center items-center text-white"
+    class="relative min-h-screen bg-cover bg-center flex flex-col justify-center items-center text-white 
+           pt-24 sm:pt-28 md:pt-32 lg:pt-36"
     style="background-image: url('/images/spiritual-bg.jpg')"
   >
 
@@ -35,31 +36,26 @@ const selectCategory = (cat) => {
 
     <div class="relative z-10 text-center px-6 max-w-4xl">
       
-
       <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 animate-fadeIn">
         Spiritual Quotes
       </h1>
 
-      <!-- Subtitle -->
       <p class="text-lg md:text-xl text-gray-200 mb-10">
         Inspirational Wisdom from Faith Fathers ✨  
         Strengthen Your Spirit. Guide Your Life.
       </p>
 
-      <!-- Categories Grid how to remove space from route ? -->
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-       <div
-         v-for="cat in categories"
-         :key="cat.slug"
-         @click="selectCategory(cat)"
-         class="cursor-pointer bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 rounded-xl py-3 px-4 text-sm md:text-base transition-all duration-300 hover:scale-105"
-  
->
-<NuxtLink :to="`/${cat.slug}`" class="block w-full h-full">
-  {{ cat.name }}
-</NuxtLink>
-</div>
-
+        <div
+          v-for="cat in categories"
+          :key="cat.slug"
+          @click="selectCategory(cat)"
+          class="cursor-pointer bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 rounded-xl py-3 px-4 text-sm md:text-base transition-all duration-300 hover:scale-105"
+        >
+          <NuxtLink :to="`/${cat.slug}`" class="block w-full h-full">
+            {{ cat.name }}
+          </NuxtLink>
+        </div>
       </div>
 
     </div>

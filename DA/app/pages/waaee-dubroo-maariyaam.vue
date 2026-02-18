@@ -24,7 +24,9 @@ onMounted(() => {
           Waa'ee Dubroo Maariyaam
         </h1>
         <p class="text-gray-400 mt-3">
-            Waa'ee dubroo Maariyaam irratti jechoota abbootii fi haadholiin amantii irraa ka'anii fi kanneen biroo irraa walitti qabame. Jechoonni kunneen waa'ee dubroo Maariyaam ilaalchisee hubannoo, kabaja, fi jaalala guddaa agarsiisu. Jechoota kana keessatti, dubroon Maariyaam akka fakkeenya gaarii, nama amantii fi nama garaa qulqulluu ta'eetti ilaalama. Jechoonni kunneen waa'ee dubroo Maariyaam ilaalchisee hubannoo, kabaja, fi jaalala guddaa agarsiisu. Jechoota kana keessatti, dubroon Maariyaam akka fakkeenya gaarii, nama amantii fi nama garaa qulqulluu ta'eetti ilaalama.
+            Waa'ee dubroo Maariyaam irratti jechoota abbootii fi haadholiin amantii irraa ka'anii fi kanneen biroo irraa walitti qabame. 
+            Jechoonni kunneen waa'ee dubroo Maariyaam ilaalchisee hubannoo, kabaja, fi jaalala guddaa agarsiisu.
+             Jechoota kana keessatti, dubroon Maariyaam akka fakkeenya gaarii, nama amantii fi nama garaa qulqulleetti taate ilaalamtti. 
         </p>
       </div>
 
