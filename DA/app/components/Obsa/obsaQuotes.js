@@ -1,5 +1,5 @@
 
-export const obsaQuotes = [
+export const obsa = [
   {
     id: 1,
     category: "Obsa",

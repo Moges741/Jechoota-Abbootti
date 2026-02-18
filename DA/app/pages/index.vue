@@ -55,7 +55,7 @@ const selectCategory = (cat) => {
          class="cursor-pointer bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 rounded-xl py-3 px-4 text-sm md:text-base transition-all duration-300 hover:scale-105"
   
 >
-<NuxtLink to="/kadhannaa" class="block w-full h-full">
+<NuxtLink :to="`/${cat.slug}`" class="block w-full h-full">
   {{ cat.name }}
 </NuxtLink>
 </div>

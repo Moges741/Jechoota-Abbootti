@@ -1,5 +1,5 @@
 
-export const jaalalaQuotes = [
+export const jaalala = [
   {
     id: 1,
     category: "Jaalala",

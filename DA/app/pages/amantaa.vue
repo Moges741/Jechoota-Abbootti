@@ -1,6 +1,6 @@
 <script setup>
-import QuoteCard from '../components/QuoteCard.vue'
-import { amantaa } from '../components/Amantaa/amantaaQuoes.js'
+import QuoteCard from '~/components/QuoteCard.vue'
+import { amantaa } from '~/components/Amantaa/amantaaQuotes.js'
 </script>
 
 <template>

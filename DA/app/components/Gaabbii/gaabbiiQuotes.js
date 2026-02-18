@@ -1,5 +1,5 @@
 
-export const gaabbiiQuotes = [
+export const gaabbii = [
   {
     id: 1,
     category: "Gaabbii",

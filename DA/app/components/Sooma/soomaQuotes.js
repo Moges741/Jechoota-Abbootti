@@ -1,5 +1,5 @@
 
-export const soomaQuotes = [
+export const sooma = [
   {
     id: 1,
     category: "Sooma",

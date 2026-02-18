@@ -1,6 +1,5 @@
-// composables/amantaaQuotes.js
 
-export const amantaaQuotes = [
+export const amantaa = [
   {
     id: 1,
     category: "Amantaa",

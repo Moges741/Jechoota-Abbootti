@@ -1,5 +1,5 @@
 
-export const waaeeDubrooMaariyaamQuotes = [
+export const waaeeDubrooMaariyaam = [
   {
     id: 1,
     category: "Waa'ee Dubroo Maariyaam",

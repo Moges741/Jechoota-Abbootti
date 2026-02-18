@@ -1,5 +1,5 @@
 
-export const ofEeggannaaQuotes = [
+export const ofEeggannaa = [
   {
     id: 1,
     category: "Of Eeggannaa",

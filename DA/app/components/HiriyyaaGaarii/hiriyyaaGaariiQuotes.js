@@ -1,4 +1,4 @@
-export const hiriyyaaGaariiQuotes = [
+export const hiriyyaaGaarii = [
   {
     id: 1,
     category: "Hiriyyaa Gaarii",

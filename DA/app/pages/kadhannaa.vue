@@ -1,6 +1,6 @@
 <script setup>
-import QuoteCard from '../components/QuoteCard.vue'
-import { kadhannaa } from '../components/Kadhannaa/kadhannaaQuotes.js'
+import QuoteCard from '~/components/QuoteCard.vue'
+import { kadhannaa } from '~/components/Kadhannaa/kadhannaaQuotes.js'
 </script>
 
 <template>

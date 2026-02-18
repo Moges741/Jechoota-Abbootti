@@ -1,5 +1,5 @@
 
-export const ofBituuQuotes = [
+export const ofBituu = [
   {
     id: 1,
     category: "Of Bituu",
