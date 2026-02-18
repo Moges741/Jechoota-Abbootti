@@ -5,7 +5,7 @@ import { gaabbii } from '~/components/Gaabbii/gaabbiiQuotes.js'
 
 <template>
   <div
-    class="min-h-screen bg-cover bg-center flex items-center justify-center p-6"
+    class="mt-20 min-h-screen bg-cover bg-center flex items-center justify-center p-6"
     style="background-image: url('/images/contact-bg.jpg')"
   >
     <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>

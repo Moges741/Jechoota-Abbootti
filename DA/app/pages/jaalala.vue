@@ -5,7 +5,7 @@ import { jaalala } from '~/components/Jaalala/jaalalaQuotes.js'
 
 <template>
   <div
-    class="min-h-screen bg-cover bg-center flex items-center justify-center p-6"
+    class="mt-20 min-h-screen bg-cover bg-center flex items-center justify-center p-6"
     style="background-image: url('/images/contact-bg.jpg')"
   >
     <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
@@ -13,7 +13,7 @@ import { jaalala } from '~/components/Jaalala/jaalalaQuotes.js'
     <div class="relative z-10 max-w-3xl w-full space-y-10">
       
       <QuoteCard
-        v-for="item in hiriyyaaGaarii"
+        v-for="item in jaalala"
         :key="item.id"
         :quote="item.quote"
         :author="item.author"

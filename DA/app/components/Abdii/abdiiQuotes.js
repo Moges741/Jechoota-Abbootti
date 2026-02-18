@@ -1,5 +1,5 @@
 
-export const abdiiQuotes = [
+export const abdii = [
   {
     id: 1,
     category: "Abdii",
