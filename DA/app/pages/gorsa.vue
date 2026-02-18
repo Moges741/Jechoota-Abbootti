@@ -13,13 +13,13 @@ onMounted(() => {
 <template>
   <div class="min-h-screen bg-gradient-to-br from-slate-950 via-gray-900 to-black py-24 px-6 relative">
 
-    <!-- Soft glow effects -->
+ 
     <div class="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
     <div class="absolute bottom-20 right-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl"></div>
 
     <div class="relative z-10 max-w-4xl mx-auto">
 
-      <!-- Page Title -->
+   
       <div class="text-center mb-16">
         <h1 class="text-4xl md:text-5xl font-bold text-white tracking-wide">
           Gorsa
@@ -29,7 +29,7 @@ onMounted(() => {
         </p>
       </div>
 
-      <!-- Quotes -->
+      
       <div
         class="space-y-12 transition-all duration-700"
         :class="visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
