@@ -1,23 +1,46 @@
 <script setup>
+import { ref, onMounted } from 'vue'
 import QuoteCard from '~/components/QuoteCard.vue'
 import { sooma } from '~/components/Sooma/soomaQuotes'
+
+const visible = ref(false)
+
+onMounted(() => {
+  visible.value = true
+})
 </script>
 
 <template>
-  <div
-    class="mt-20 min-h-screen bg-cover bg-center flex items-center justify-center p-6"
-    style="background-image: url('/images/contact-bg.jpg')"
-  >
-    <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+  <div class="min-h-screen bg-gradient-to-br from-gray-950 via-slate-900 to-black py-24 px-6 relative">
+    
+    <!-- Blurred color circles -->
+    <div class="absolute top-24 left-10 w-72 h-72 bg-rose-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-24 right-10 w-72 h-72 bg-pink-500/10 rounded-full blur-3xl"></div>
 
-    <div class="relative z-10 max-w-3xl w-full space-y-10">
-      
-      <QuoteCard
-        v-for="item in sooma"
-        :key="item.id"
-        :quote="item.quote"
-        :author="item.author"
-      />
+    <div class="relative z-10 max-w-4xl mx-auto">
+
+      <!-- Page header -->
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight">
+          Sooma
+        </h1>
+        <p class="text-gray-400 mt-3">
+          Wisdom About Fasting & Spiritual Discipline
+        </p>
+      </div>
+
+      <!-- Quotes list with fade-in animation -->
+      <div
+        class="space-y-12 transition-all duration-700"
+        :class="visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
+      >
+        <QuoteCard
+          v-for="item in sooma"
+          :key="item.id"
+          :quote="item.quote"
+          :author="item.author"
+        />
+      </div>
 
     </div>
   </div>
