@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 
 const categories = [
   { name: "Kadhannaa", slug: "kadhannaa" },
@@ -31,10 +31,9 @@ const selectCategory = (cat) => {
            pt-24 sm:pt-28 md:pt-32 lg:pt-36"
     style="background-image: url('/images/spiritual-bg.jpg')"
   >
-
     <div class="absolute inset-0 bg-black/60 "></div>
 
-    <div class="relative z-10 text-center px-6 max-w-4xl">
+    <div class="mb-10 relative z-10 text-center px-6 max-w-4xl">
       
       <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 animate-fadeIn">
         Spiritual Quotes
@@ -44,7 +43,26 @@ const selectCategory = (cat) => {
         Inspirational Wisdom from Faith Fathers ✨  
         Strengthen Your Spirit. Guide Your Life.
       </p>
-
+<div class="flex justify-center my-8">
+  <p
+    class="
+      relative px-6 py-3 text-sm md:text-base text-white font-medium text-center
+      rounded-xl
+      bg-black/40 backdrop-blur-md
+      border border-yellow-400/40
+      shadow-lg shadow-yellow-400/10
+      transition-all duration-500
+      hover:scale-105 hover:shadow-yellow-400/30 hover:border-yellow-400
+      before:absolute before:inset-0 before:rounded-xl
+      before:p-[2px]
+      before:bg-gradient-to-r before:from-yellow-400 before:via-yellow-200 before:to-yellow-400
+      before:opacity-60 before:animate-pulse
+      before:-z-10
+    "
+  >
+    Jechoota Abboottif kannneen gadii keessaa tuquudhaan dubbisuu dandeessu!
+  </p>
+</div>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         <div
           v-for="cat in categories"
