@@ -11,10 +11,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="relative min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-black py-24 px-6">
+  <div class="relative min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-black py-24 px-6 overflow-hidden">
 
-    <div class="absolute top-32 -left-10 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-32 -right-10 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
+  
+    <div class="absolute top-32 -left-20 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-32 -right-20 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
 
     <div class="relative z-10 max-w-4xl mx-auto">
       <div class="text-center mb-16">
@@ -25,7 +26,6 @@ onMounted(() => {
           Strengthen Your Faith Through Sacred Wisdom
         </p>
       </div>
-
 
       <div
         class="space-y-12 transition-all duration-1000"
@@ -38,7 +38,7 @@ onMounted(() => {
           :author="item.author"
         />
       </div>
-
     </div>
   </div>
 </template>
+

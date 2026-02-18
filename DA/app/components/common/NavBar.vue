@@ -3,7 +3,7 @@
     <nav class="fixed top-0 left-0 w-full z-50 bg-gray-900/50 backdrop-blur-lg p-4">
       <div class="container mx-auto flex items-center justify-between">
         
-        <div class="text-green-400 text-lg font-bold">
+        <div class="text-yellow-500 text-lg font-bold">
           Jechoota Abbootti
         </div>
 

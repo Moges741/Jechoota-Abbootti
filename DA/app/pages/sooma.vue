@@ -11,7 +11,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-gray-950 via-slate-900 to-black py-24 px-6 relative">
+  <div class="min-h-screen bg-gradient-to-br from-gray-950 via-slate-900 to-black py-24 px-6 relative overflow-hidden">
     
     <div class="absolute top-24 left-10 w-72 h-72 bg-rose-500/10 rounded-full blur-3xl"></div>
     <div class="absolute bottom-24 right-10 w-72 h-72 bg-pink-500/10 rounded-full blur-3xl"></div>

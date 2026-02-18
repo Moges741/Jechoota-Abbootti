@@ -1,5 +1,5 @@
 <script setup>
-import { EnvelopeIcon, PhoneIcon, UserIcon } from '@heroicons/vue/24/outline'
+import { EnvelopeIcon, PhoneIcon, UserIcon, ChatBubbleLeftRightIcon } from '@heroicons/vue/24/outline'
 
 const contacts = [
   {
@@ -7,14 +7,16 @@ const contacts = [
     name: "Moges Sisay",
     email: "mogesse741@gmail.com",
     phone: "+251924433166",
-    description: "Software Engineering Student (MERN Stack Developer) and Creator of Jechoota Abbootti"
+    description: "Software Engineering Student (MERN Stack Developer) and Creator of Jechoota Abbootti's web",
+    telegram: "@moges741"
   },
   {
     role: "Quotes Provider",
-    name: "Ayantu",
-    email: "quotes@email.com",
+    name: "Ayantu Tesfaye",
+    email: "ayantutesfaye311@gmail.com",
     phone: "+251966500071",
-    description: "Biomedical Engineering Student and Spiritual Quotes Contributor"
+    description: "Biomedical Engineering Student and Spiritual Quotes Contributor",
+    telegram: "@GimsasMKA"
   }
 ]
 </script>
@@ -24,12 +26,12 @@ const contacts = [
     class="relative min-h-screen bg-cover bg-center flex items-center justify-center text-white"
     style="background-image: url('/images/contact-bg.jpg')"
   >
-    <!-- Overlay -->
+   
     <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
 
     <div class="relative z-10 w-full max-w-6xl px-6 py-20">
 
-      <!-- Title -->
+     
       <div class="text-center mb-20">
         <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
           Contact
@@ -39,7 +41,7 @@ const contacts = [
         </p>
       </div>
 
-      <!-- Cards -->
+     
       <div class="grid md:grid-cols-2 gap-12">
 
         <div
@@ -48,17 +50,17 @@ const contacts = [
           class="group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-10 shadow-2xl transition-all duration-500 hover:bg-white/10 hover:scale-[1.03]"
         >
 
-          <!-- Glow effect -->
+          
           <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/5 to-white/0 opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
           <div class="relative z-10">
 
-            <!-- Role -->
+           
             <p class="text-sm uppercase tracking-widest text-yellow-400 mb-3">
               {{ person.role }}
             </p>
 
-            <!-- Name -->
+           
             <div class="flex items-center gap-3 mb-6">
               <UserIcon class="w-6 h-6 text-gray-300" />
               <h2 class="text-2xl font-semibold">
@@ -66,12 +68,12 @@ const contacts = [
               </h2>
             </div>
 
-            <!-- Description -->
+           
             <p class="text-gray-300 leading-relaxed mb-8">
               {{ person.description }}
             </p>
 
-            <!-- Contact Info -->
+            
             <div class="space-y-4">
 
               <a
@@ -88,6 +90,14 @@ const contacts = [
               >
                 <PhoneIcon class="w-5 h-5" />
                 <span>{{ person.phone }}</span>
+              </a>
+              <a
+                :href="`https://t.me/${person.telegram.replace('@', '')}`"
+                target="_blank"
+                class="flex items-center gap-3 text-gray-200 hover:text-yellow-400 transition duration-300"
+              >
+                <ChatBubbleLeftRightIcon class="w-5 h-5" />
+                <span>{{ person.telegram }}</span>
               </a>
 
             </div>
