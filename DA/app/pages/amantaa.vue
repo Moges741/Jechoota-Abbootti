@@ -1,23 +1,43 @@
 <script setup>
+import { onMounted, ref } from 'vue'
 import QuoteCard from '~/components/QuoteCard.vue'
 import { amantaa } from '~/components/Amantaa/amantaaQuotes.js'
+
+const visible = ref(false)
+
+onMounted(() => {
+  visible.value = true
+})
 </script>
 
 <template>
-  <div
-    class="mt-20 min-h-screen bg-cover bg-center flex items-center justify-center p-6"
-    style="background-image: url('/images/contact-bg.jpg')"
-  >
-    <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+  <div class="relative min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-black py-24 px-6">
 
-    <div class="relative z-10 max-w-3xl w-full space-y-10">
-      
-      <QuoteCard
-        v-for="item in amantaa"
-        :key="item.id"
-        :quote="item.quote"
-        :author="item.author"
-      />
+    <div class="absolute top-32 -left-10 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-32 -right-10 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight">
+          Amantaa Quotes
+        </h1>
+        <p class="text-gray-400 mt-4">
+          Strengthen Your Faith Through Sacred Wisdom
+        </p>
+      </div>
+
+
+      <div
+        class="space-y-12 transition-all duration-1000"
+        :class="visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
+      >
+        <QuoteCard
+          v-for="item in amantaa"
+          :key="item.id"
+          :quote="item.quote"
+          :author="item.author"
+        />
+      </div>
 
     </div>
   </div>
