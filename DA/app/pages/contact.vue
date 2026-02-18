@@ -22,7 +22,7 @@ const contacts = [
     email: "ayantutesfaye311@gmail.com",
     phone: "+251966500071",
     description:
-      "Biomedical Engineering Student and Spiritual Quotes Contributor",
+      "Biomedical Engineering Student and Spiritual Quotes Proviver",
     telegram: "@GimsasMKA"
   }
 ]
