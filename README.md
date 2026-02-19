@@ -122,7 +122,7 @@ This project was created to:
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/jechoota-abbootti.git
+git clone https://github.com/moges741/jechoota-abbootti.git
 ```
 
 ### Navigate into project
