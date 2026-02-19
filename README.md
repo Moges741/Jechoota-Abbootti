@@ -20,20 +20,15 @@ This project was created to:
 -  Combine faith with modern UI/UX design  
 
 ---
+## 🖥 Desktop & 📱 Mobile Preview
 
-## 🖥 Desktop Preview
-
-
-![Desktop View](./DA/public/images/desktop.png)
-
----
-
-## 📱 Mobile Preview
-
-
-![Mobile View](./DA/public/images/mobile.png)
+<p align="center">
+  <img src="./DA/public/images/desktop.png" width="700" />
+  <img src="./DA/public/images/mobile.png" width="250" />
+</p>
 
 ---
+
 
 ## ✨ Features
 
