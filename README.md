@@ -24,14 +24,14 @@ This project was created to:
 ## 🖥 Desktop Preview
 
 
-![Desktop View](./screenshots/desktop.png)
+![Desktop View](./images/desktop.png)
 
 ---
 
 ## 📱 Mobile Preview
 
 
-![Mobile View](./screenshots/mobile.png)
+![Mobile View](./images/mobile.png)
 
 ---
 
