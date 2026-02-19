@@ -23,8 +23,8 @@ This project was created to:
 ## 🖥 Desktop & 📱 Mobile Preview
 
 <p align="center">
-  <img src="./DA/public/images/desktop.png" width="700" />
-  <img src="./DA/public/images/mobile.png" width="250" />
+  <img src="./DA/public/images/desktop.png" width="600" height="400" />
+  <img src="./DA/public/images/mobile.png" width="200" height="400" />
 </p>
 
 ---
